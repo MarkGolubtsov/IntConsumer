@@ -31,6 +31,7 @@ public class Consumer {
 
         return numbersCopy;
     }
+
     public double mean() {
         clearRedundantElements();
         return getAverageFromMap(storage);
