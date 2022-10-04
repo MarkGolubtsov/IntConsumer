@@ -39,7 +39,7 @@ public class Consumer {
 
     private void clearRedundantElements() {
         Date olderRangeDate = getOlderRangeDate();
-        storage.headMap(olderRangeDate.getTime());
+        storage.headMap(olderRangeDate.getTime()).clear();
     }
 
     private Date getOlderRangeDate() {
